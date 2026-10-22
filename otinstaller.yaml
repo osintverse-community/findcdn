@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/findcdn@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/findcdn@sha256:2b9044c685cbadd6cb302236985b5e07a323443d5abf47c6b121e5efe48aac6e
   platforms: [linux/amd64, linux/arm64]
   command: ["findcdn", "list", "{domain}", "--all"]
   output_format: text
